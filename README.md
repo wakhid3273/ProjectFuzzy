@@ -36,42 +36,45 @@ Sistem menggunakan tiga variabel input yang diambil dari pola hidup harian:
 
 Output akhir merupakan skor representasi kualitas tidur:
 
-| Variabel           | Rentang | Himpunan Fuzzy                  |
-| :----------------- | :------ | :------------------------------ |
-| **Kualitas Tidur** | 1 - 10  | Buruk, Cukup, Baik, Sangat Baik |
+| Variabel           | Rentang | Himpunan Fuzzy     |
+| :----------------- | :------ | :----------------- |
+| **Kualitas Tidur** | 1 - 10  | Buruk, Cukup, Baik |
 
 ---
 
 ## 4. Basis Aturan (Rule Base)
 
-Sistem ini menggunakan **24 aturan logika IF-THEN** yang didefinisikan secara eksplisit untuk mencakup berbagai skenario pola tidur:
+Sistem ini menggunakan **27 aturan logika IF-THEN** yang didefinisikan secara eksplisit untuk mencakup berbagai skenario pola tidur:
 
-| No  | Durasi Tidur | Aktivitas Fisik | Konsumsi Kafein | Kualitas Tidur  |
-| :-- | :----------- | :-------------- | :-------------- | :-------------- |
-| 1   | Pendek       | Rendah          | Tinggi          | **Buruk**       |
-| 2   | Pendek       | Rendah          | Sedang          | **Buruk**       |
-| 3   | Pendek       | Rendah          | Rendah          | **Buruk**       |
-| 4   | Pendek       | Sedang          | Tinggi          | **Buruk**       |
-| 5   | Pendek       | Sedang          | Sedang          | **Cukup**       |
-| 6   | Pendek       | Sedang          | Rendah          | **Cukup**       |
-| 7   | Pendek       | Tinggi          | Tinggi          | **Cukup**       |
-| 8   | Pendek       | Tinggi          | Sedang          | **Cukup**       |
-| 9   | Pendek       | Tinggi          | Rendah          | **Cukup**       |
-| 10  | Sedang       | Rendah          | Tinggi          | **Buruk**       |
-| 11  | Sedang       | Rendah          | Sedang          | **Cukup**       |
-| 12  | Sedang       | Rendah          | Rendah          | **Cukup**       |
-| 13  | Sedang       | Sedang          | Tinggi          | **Cukup**       |
-| 14  | Sedang       | Sedang          | Sedang          | **Baik**        |
-| 15  | Sedang       | Sedang          | Rendah          | **Baik**        |
-| 16  | Sedang       | Tinggi          | Tinggi          | **Cukup**       |
-| 17  | Sedang       | Tinggi          | Sedang          | **Baik**        |
-| 18  | Sedang       | Tinggi          | Rendah          | **Sangat Baik** |
-| 19  | Panjang      | Rendah          | Tinggi          | **Cukup**       |
-| 20  | Panjang      | Rendah          | Sedang          | **Cukup**       |
-| 21  | Panjang      | Rendah          | Rendah          | **Baik**        |
-| 22  | Panjang      | Sedang          | Tinggi          | **Cukup**       |
-| 23  | Panjang      | Sedang          | Sedang          | **Baik**        |
-| 24  | Panjang      | Sedang          | Rendah          | **Sangat Baik** |
+| No  | Durasi Tidur | Aktivitas Fisik | Konsumsi Kafein | Kualitas Tidur |
+| :-- | :----------- | :-------------- | :-------------- | :------------- |
+| 1   | Pendek       | Rendah          | Tinggi          | **Buruk**      |
+| 2   | Pendek       | Rendah          | Sedang          | **Buruk**      |
+| 3   | Pendek       | Rendah          | Rendah          | **Buruk**      |
+| 4   | Pendek       | Sedang          | Tinggi          | **Buruk**      |
+| 5   | Pendek       | Sedang          | Sedang          | **Cukup**      |
+| 6   | Pendek       | Sedang          | Rendah          | **Buruk**      |
+| 7   | Pendek       | Tinggi          | Tinggi          | **Buruk**      |
+| 8   | Pendek       | Tinggi          | Sedang          | **Cukup**      |
+| 9   | Pendek       | Tinggi          | Rendah          | **Cukup**      |
+| 10  | Sedang       | Rendah          | Tinggi          | **Buruk**      |
+| 11  | Sedang       | Rendah          | Sedang          | **Buruk**      |
+| 12  | Sedang       | Rendah          | Rendah          | **Buruk**      |
+| 13  | Sedang       | Sedang          | Tinggi          | **Cukup**      |
+| 14  | Sedang       | Sedang          | Sedang          | **Baik**       |
+| 15  | Sedang       | Sedang          | Rendah          | **Buruk**      |
+| 16  | Sedang       | Tinggi          | Tinggi          | **Buruk**      |
+| 17  | Sedang       | Tinggi          | Sedang          | **Buruk**      |
+| 18  | Sedang       | Tinggi          | Rendah          | **Baik**       |
+| 19  | Panjang      | Rendah          | Tinggi          | **Buruk**      |
+| 20  | Panjang      | Rendah          | Sedang          | **Cukup**      |
+| 21  | Panjang      | Rendah          | Rendah          | **Buruk**      |
+| 22  | Panjang      | Sedang          | Tinggi          | **Buruk**      |
+| 23  | Panjang      | Sedang          | Sedang          | **Baik**       |
+| 24  | Panjang      | Sedang          | Rendah          | **Buruk**      |
+| 25  | Panjang      | Tinggi          | Tinggi          | **Buruk**      |
+| 26  | Panjang      | Tinggi          | Sedang          | **Buruk**      |
+| 27  | Panjang      | Tinggi          | Rendah          | **Baik**       |
 
 ---
 
